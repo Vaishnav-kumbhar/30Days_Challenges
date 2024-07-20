@@ -1,3 +1,5 @@
+// Object creation and access
+// this keyword use
 const book = {
   title: "time",
   author: "vaishnav",
@@ -14,6 +16,7 @@ const book = {
   },
 };
 
+// object methos
 console.log(book);
 const author = book.author;
 const title = book.title;
@@ -22,6 +25,7 @@ console.log(book.fn());
 book.update(2005);
 console.log(book);
 
+// nested object
 const library = [
   { title: "rich dad", year: 2004, author: "padman" },
   { title: "mukti", year: 2012, author: "dinesh" },
@@ -36,8 +40,9 @@ const auth = library.map((author) => author.author);
 console.log(auth);
 console.log(book.method());
 
+// access keys of book object using for in loop
+// object iteration
 for (const key in book) {
   console.log(book[key]);
 }
-
 console.log(Object.keys(book), Object.values(book));
